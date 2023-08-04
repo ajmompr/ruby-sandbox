@@ -1,4 +1,5 @@
 require "pry-byebug"
+require "date"
 unpredictable_inputs = [
   "Hello!",
   Time.now,
@@ -16,6 +17,8 @@ some_random_input = unpredictable_inputs.sample
 if some_random_input.class == String
    some_string = some_random_input.downcase
   pp some_string
-else
-  pp "This input is not a string"
+elsif some_random_input.class == Time
+else 
+  pp some_random_input
+  pp some_random_input.class
 end
