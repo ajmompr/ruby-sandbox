@@ -11,5 +11,11 @@ unpredictable_inputs = [
 ]
 
 some_random_input = unpredictable_inputs.sample
-# write your program below
 
+# write your program below
+if some_random_input.class == String
+   some_string = some_random_input.downcase
+  pp some_string
+else
+  pp "This input is not a string"
+end
