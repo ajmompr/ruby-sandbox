@@ -4,8 +4,19 @@ inputs = [
   ["1", "3", "19"]
 ]
 numbers = inputs.sample
-pp numbers
+odd_array = []
+odd_string = ""
+
+#pp numbers
 # write your program below
 numbers.each do |number|
-  pp number.to_i
+  new_integer = number.to_i
+  #pp new_integer
+  if new_integer % 2 != 0
+    odd_array.push(new_integer)
+  end
 end
+
+#pp odd_array
+pp odd_string = odd_array.sum.to_s
+  
