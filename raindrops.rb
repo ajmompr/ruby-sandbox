@@ -1,6 +1,7 @@
 integers = [1, 21, 35, 105]
 integer = integers.sample
 # write your program below
+raindrops = ""
 if integer % 3 == 0
   pp "Pling"
 elsif integer % 5 == 0
