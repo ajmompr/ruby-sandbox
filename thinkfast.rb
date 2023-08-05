@@ -11,6 +11,8 @@ unpredictable_inputs = [
   { :city => "Chicago", :state => "IL", :zip => 60654 }
 ]
 
+#some_random_input = :TEST_SYMBOL
+
 some_random_input = unpredictable_inputs.sample
 
 # write your program below
@@ -28,6 +30,9 @@ elsif some_random_input.class == Integer
     odd_int = some_random_input.to_s
     pp "#{odd_int} is odd"
   end
+elsif some_random_input.class == Symbol
+  some_symbol = some_random_input.downcase
+  pp some_symbol  
 else 
   pp some_random_input
   pp some_random_input.class
