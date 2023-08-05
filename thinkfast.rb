@@ -11,8 +11,6 @@ unpredictable_inputs = [
   { :city => "Chicago", :state => "IL", :zip => 60654 }
 ]
 
-#some_random_input = :TEST_SYMBOL
-
 some_random_input = unpredictable_inputs.sample
 
 # write your program below
@@ -33,7 +31,12 @@ elsif some_random_input.class == Integer
 elsif some_random_input.class == Symbol
   some_symbol = some_random_input.downcase
   pp some_symbol  
+elsif some_random_input == nil
+  pp "no object provided"
+elsif some_random_input == true
+  pp "you may pass"
+elsif some_random_input == false
+  pp "you may not pass"  
 else 
-  pp some_random_input
-  pp some_random_input.class
+  pp some_random_input.keys
 end
