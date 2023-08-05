@@ -18,6 +18,8 @@ if some_random_input.class == String
    some_string = some_random_input.downcase
   pp some_string
 elsif some_random_input.class == Time
+  some_weekday = Time.now.strftime("%A").downcase
+  pp some_weekday
 else 
   pp some_random_input
   pp some_random_input.class
