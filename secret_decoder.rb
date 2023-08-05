@@ -28,4 +28,7 @@ split_secret.each do |character|
     decoded_msg.push(character)
   end
 end
-pp decoded_msg    
+
+decoded_msg.each do |letter|
+  print letter
+end
