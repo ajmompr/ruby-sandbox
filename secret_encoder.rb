@@ -27,5 +27,8 @@ split_secret.each do |letter|
     encoded_msg.push(letter)
   end
 end
-
 pp encoded_msg
+
+encoded_msg.each do |letter|
+  print letter
+end
