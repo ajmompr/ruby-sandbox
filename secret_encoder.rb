@@ -3,6 +3,7 @@ secret = [
   "Is this secure enough for my PASSWORD?",
   "we should be more clever"
 ].sample
+secret = secret.downcase
 split_secret = secret.split("")
 pp secret
 pp split_secret
