@@ -20,6 +20,14 @@ if some_random_input.class == String
 elsif some_random_input.class == Time
   some_weekday = Time.now.strftime("%A").downcase
   pp some_weekday
+elsif some_random_input.class == Integer
+  if some_random_input % 2 == 0
+    even_int = some_random_input.to_s
+    pp "#{even_int} is even"
+  else
+    odd_int = some_random_input.to_s
+    pp "#{odd_int} is odd"
+  end
 else 
   pp some_random_input
   pp some_random_input.class
