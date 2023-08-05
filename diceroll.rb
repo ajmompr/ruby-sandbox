@@ -1,2 +1,2 @@
-num = rand(7)
+num = rand(1..6)
 pp num
