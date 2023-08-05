@@ -11,14 +11,16 @@ unpredictable_inputs = [
   { :city => "Chicago", :state => "IL", :zip => 60654 }
 ]
 
-some_random_input = unpredictable_inputs.sample
+some_random_input = 'Monday'
+
+#some_random_input = unpredictable_inputs.sample
 
 # write your program below
 if some_random_input.class == String
    some_string = some_random_input.downcase
   pp some_string
 elsif some_random_input.class == Time
-  some_weekday = Time.now.strftime("%A").downcase
+  some_weekday = some_random_input.strftime("%A").downcase.to_s
   pp some_weekday
 elsif some_random_input.class == Integer
   if some_random_input % 2 == 0
