@@ -14,12 +14,18 @@ letter_array = letter_string.split("")
 number_array = number_string.split("")
 space_array = string.split("")
 
-letter_count = 0
-number_count = 0
 space_count = 0
 
 pp letter_array
 pp number_array
 pp space_array
 
-letter_array.each do |letter|
+space_array.each do |character|
+  if character == " "
+    space_count += 1
+  end
+end 
+
+pp "Number of letters in the string is: " + letter_array.length.to_s
+pp "Number of spaces in the string is: " + space_count.to_s
+pp "Number of digits in the string is: " + number_array.length.to_s
