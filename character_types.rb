@@ -16,9 +16,11 @@ space_array = string.split("")
 
 space_count = 0
 
+=begin
 pp letter_array
 pp number_array
 pp space_array
+=end
 
 space_array.each do |character|
   if character == " "
